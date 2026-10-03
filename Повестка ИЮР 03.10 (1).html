@@ -1,4 +1,8 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Повестка ИЮР 03.10</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -97,6 +101,8 @@ tr.win td{background:var(--accent-soft)}
 .track{height:12px;background:var(--steel-soft)}
 .fill{height:100%;background:var(--steel)}
 .fill.win{background:var(--accent)}
+.explain{margin:14px 0 0;padding:12px 16px;background:var(--steel-soft);border-left:3px solid var(--steel);font-size:14.5px;max-width:72ch}
+.explain b{font-weight:600}
 .note{font-size:14px;color:var(--muted);margin:14px 0 0;max-width:72ch}
 footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
 
@@ -114,6 +120,8 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
 }
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header class="stamp">
@@ -160,7 +168,7 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
           <div class="m up"><b>33</b><span>регистрации после рассылки по базе</span></div>
         </div>
 
-        <h4>Реклама в Яндексе · отчёт Михаила · 10–17.09.2026</h4>
+        <h4>Реклама в Яндексе · отчёт Михаила по прошлому вебинару</h4>
         <div class="metric">
           <div class="m"><b>5 715 ₽</b><span>расход</span></div>
           <div class="m"><b>19 520</b><span>показов</span></div>
@@ -168,10 +176,11 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
           <div class="m"><b>95 ₽</b><span>средняя цена клика</span></div>
           <div class="m up"><b>37</b><span>конверсий, 154 ₽ за конверсию</span></div>
         </div>
+        <p class="explain"><b>Что такое конверсия в этом отчёте.</b> Это человек, который дочитал страницу вебинара до 80% (21) или нажал на кнопку (16). Это интерес к вебинару, а не регистрация. Регистрации пока отдельно не считаются, попросим Михаила настроить.</p>
 
         <div class="tbl" style="margin-top:14px">
           <table>
-            <thead><tr><th>Кампания</th><th class="r">Показы</th><th class="r">Клики</th><th class="r">CTR</th><th class="r">Расход</th><th class="r">CPC</th><th class="r">Отказы</th><th class="r">Конв.</th><th class="r">CPA</th></tr></thead>
+            <thead><tr><th>Кампания</th><th class="r">Показы</th><th class="r">Клики</th><th class="r">CTR</th><th class="r">Расход</th><th class="r">CPC</th><th class="r">Отказы</th><th class="r">Конверсии</th><th class="r">Цена конверсии</th></tr></thead>
             <tbody>
               <tr class="win">
                 <td class="who"><b>РСЯ</b><span>вебинар · Россия</span></td>
@@ -196,15 +205,15 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
           <li>РСЯ дала 34 из 37 конверсий при 57% расхода. Конверсия в РСЯ в 8,5 раза дешевле, чем на поиске.</li>
           <li>Цена клика в обеих кампаниях почти одинаковая, около 95 ₽. Разница в качестве трафика: из РСЯ меньше отказов и больше действий на странице.</li>
           <li>Поиск даёт высокий CTR (1,54%), но из 25 кликов только 3 конверсии.</li>
-          <li>Конверсии в отчёте — это клики по ссылке и доскролл до 80%, а не регистрации. Сколько людей зарегистрировалось с рекламы, из отчёта не видно.</li>
+          <li>Сколько людей зарегистрировалось с рекламы, из отчёта не видно: конверсии здесь считают интерес, а не регистрации.</li>
         </ul>
 
         <div class="decide">
           <h4>Решить и запросить у Михаила</h4>
           <ol>
             <li>Перераспределить бюджет с поиска в РСЯ на кампании под 08/10.</li>
-            <li>Настроить цель «регистрация на вебинар» и считать CPA по ней.</li>
-            <li>Отчёт по текущей кампании под 08/10. Этот отчёт за 10–17.09.</li>
+            <li>Настроить цель «регистрация на вебинар» и считать стоимость одной регистрации.</li>
+            <li>Отчёт по текущей кампании под 08/10.</li>
           </ol>
         </div>
       </section>
@@ -354,5 +363,5 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
   document.querySelectorAll('main section').forEach(function(s){io.observe(s)});
 })();
 </script>
-
-</body></html>
+</body>
+</html>
