@@ -87,6 +87,16 @@ td.pay{font-family:var(--mono);font-size:13.5px;white-space:nowrap;font-variant-
 td ul{margin:0;padding-left:16px}
 .tag{display:inline-block;font:500 11px/1 var(--mono);letter-spacing:.06em;padding:4px 7px;border:1px solid var(--accent);color:var(--accent);margin-top:6px}
 
+th.r,td.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.win td{background:var(--accent-soft)}
+.bars{margin-top:18px;display:flex;flex-direction:column;gap:8px;max-width:560px}
+.bars-title{font:500 11.5px/1 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.bar{display:grid;grid-template-columns:56px 1fr 64px;gap:10px;align-items:center;font-size:14px}
+.bar .bl{color:var(--muted)}
+.bar .bv{font-family:var(--mono);font-size:13.5px;text-align:right;font-variant-numeric:tabular-nums}
+.track{height:12px;background:var(--steel-soft)}
+.fill{height:100%;background:var(--steel)}
+.fill.win{background:var(--accent)}
 .note{font-size:14px;color:var(--muted);margin:14px 0 0;max-width:72ch}
 footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
 
@@ -140,7 +150,7 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
         <div class="sh"><div class="num">01</div><div><h3>Вебинар 08/10</h3><p class="sub">Ближайший эфир. Реклама, посевы и Директ запускаем в понедельник.</p></div></div>
         <ul class="pts">
           <li>Страница вебинара собрана и передана Михаилу.</li>
-          <li>Реклама: статистика от Михаила по Яндексу. Бюджета на 08/10 хватает, пополнять не нужно.</li>
+          <li>Реклама: бюджета на 08/10 хватает, пополнять не нужно. Отчёт Михаила по Яндексу ниже.</li>
           <li>Посевы: договор и счёт оплачены. Согласуем каналы и рекламный пост.</li>
           <li>Рассылка по нашей базе. На эфире 25/09 именно она дала основной прирост регистраций.</li>
         </ul>
@@ -148,6 +158,54 @@ footer{font:400 12px/1.5 var(--mono);color:var(--muted);text-align:center}
         <div class="metric">
           <div class="m"><b>2</b><span>регистрации до рассылки</span></div>
           <div class="m up"><b>33</b><span>регистрации после рассылки по базе</span></div>
+        </div>
+
+        <h4>Реклама в Яндексе · отчёт Михаила · 10–17.09.2026</h4>
+        <div class="metric">
+          <div class="m"><b>5 715 ₽</b><span>расход</span></div>
+          <div class="m"><b>19 520</b><span>показов</span></div>
+          <div class="m"><b>60</b><span>кликов, CTR 0,31%</span></div>
+          <div class="m"><b>95 ₽</b><span>средняя цена клика</span></div>
+          <div class="m up"><b>37</b><span>конверсий, 154 ₽ за конверсию</span></div>
+        </div>
+
+        <div class="tbl" style="margin-top:14px">
+          <table>
+            <thead><tr><th>Кампания</th><th class="r">Показы</th><th class="r">Клики</th><th class="r">CTR</th><th class="r">Расход</th><th class="r">CPC</th><th class="r">Отказы</th><th class="r">Конв.</th><th class="r">CPA</th></tr></thead>
+            <tbody>
+              <tr class="win">
+                <td class="who"><b>РСЯ</b><span>вебинар · Россия</span></td>
+                <td class="r">17 895</td><td class="r">35</td><td class="r">0,20%</td><td class="r">3 275 ₽</td><td class="r">94 ₽</td><td class="r">12,2%</td><td class="r"><b>34</b></td><td class="r"><b>96 ₽</b></td>
+              </tr>
+              <tr>
+                <td class="who"><b>Поиск</b><span>вебинар · инфо + околоцелевые</span></td>
+                <td class="r">1 625</td><td class="r">25</td><td class="r">1,54%</td><td class="r">2 441 ₽</td><td class="r">98 ₽</td><td class="r">27,3%</td><td class="r">3</td><td class="r">814 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bars" role="img" aria-label="Стоимость конверсии: РСЯ 96 рублей, Поиск 814 рублей">
+          <div class="bars-title">Стоимость конверсии</div>
+          <div class="bar"><span class="bl">РСЯ</span><div class="track"><div class="fill win" style="width:11.8%"></div></div><span class="bv">96 ₽</span></div>
+          <div class="bar"><span class="bl">Поиск</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="bv">814 ₽</span></div>
+        </div>
+
+        <h4>Что видно</h4>
+        <ul class="pts">
+          <li>РСЯ дала 34 из 37 конверсий при 57% расхода. Конверсия в РСЯ в 8,5 раза дешевле, чем на поиске.</li>
+          <li>Цена клика в обеих кампаниях почти одинаковая, около 95 ₽. Разница в качестве трафика: из РСЯ меньше отказов и больше действий на странице.</li>
+          <li>Поиск даёт высокий CTR (1,54%), но из 25 кликов только 3 конверсии.</li>
+          <li>Конверсии в отчёте — это клики по ссылке и доскролл до 80%, а не регистрации. Сколько людей зарегистрировалось с рекламы, из отчёта не видно.</li>
+        </ul>
+
+        <div class="decide">
+          <h4>Решить и запросить у Михаила</h4>
+          <ol>
+            <li>Перераспределить бюджет с поиска в РСЯ на кампании под 08/10.</li>
+            <li>Настроить цель «регистрация на вебинар» и считать CPA по ней.</li>
+            <li>Отчёт по текущей кампании под 08/10. Этот отчёт за 10–17.09.</li>
+          </ol>
         </div>
       </section>
 
